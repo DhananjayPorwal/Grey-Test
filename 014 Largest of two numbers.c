@@ -5,7 +5,7 @@ int main()
     printf("Enter two numbers\n");
     scanf("%d%d", &a, &b);
     if(a>b)
-    printf("A is greater than B\n");
+    printf("A is larger value B\n");
     else
-    printf("B is greater than A\n");
+    printf("B is larger value A\n");
 }
