@@ -1,6 +1,6 @@
 # Grey-Test
 
-"Grey-Test" name I choose for this repository because I directly copied or practiced some programs form Internet, So I termed that as Black & on other hand, remaining stuff is genuin and handycrafted by me termed as White.
+"Grey-Test" name I choose for this repository because I directly copied or practiced some programs form Internet, So I termed that as Black & on other hand, remaining stuff is genuine and handycrafted by me termed as White.
 When we combine both the colors, resultant seems to be Grey.
 Test word is used here because here I test knowledge of various languages I learned.
 To combine both the concepts we get "Grey-Test" as the perfect name for this repository. 
