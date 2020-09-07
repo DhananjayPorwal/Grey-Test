@@ -12,15 +12,17 @@
 ### C language
 It took 4 months to learn C language form begineer to advance.
 ###### Instructor: [Prashant Chaudhari](https://youtu.be/vl794HKeXug)
-OS: [Windows 10](https://www.microsoft.com/en-in/windows/get-windows-10)
-Editor: [CODE::BLOCKS](http://www.codeblocks.org/)
+OS: [Windows 10](https://www.microsoft.com/en-in/windows/get-windows-10) |
+Editor: [CODE::BLOCKS](http://www.codeblocks.org/) |
+Compiler: [GCC](https://gcc.gnu.org/)
 
 * Still learning this language.
 
 ### C++ language
 ###### Instructor: [Harry](https://youtu.be/yGB9jhsEsr8)
-OS: [Windows 10](https://www.microsoft.com/en-in/windows/get-windows-10)
-Editor: [Gitpod](https://gitpod.io/)
+OS: [Windows 10](https://www.microsoft.com/en-in/windows/get-windows-10) |
+Editor: [Gitpod](https://gitpod.io/) |
+Compiler: [G++](https://gcc.gnu.org/)
 * Still learning this language.
 
 ### Python language
