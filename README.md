@@ -9,3 +9,15 @@
 
 ### C language
 It took 4 months to learn C language form begineer to advance.
+###### Instructor: [Prashant Chaudhari](https://youtu.be/vl794HKeXug)
+
+* Still learning this language.
+
+### C++ language
+###### Instructor: [Harry](https://youtu.be/yGB9jhsEsr8)
+* Still learning this language.
+
+### Python language
+###### Instructor: [Ziyad Yehia](https://www.udemy.com/course/the-python-bible/)
+* Still learning this language.
+
