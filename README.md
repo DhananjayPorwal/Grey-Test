@@ -18,19 +18,18 @@ It took 4 months to learn C language form beginner to advance.
 OS: [Windows 10](https://www.microsoft.com/en-in/windows/get-windows-10) |
 Editor: [CODE::BLOCKS](http://www.codeblocks.org/) |
 Compiler: [GCC](https://gcc.gnu.org/)
-
- Still learning this language.
+* Still learning this language.
 
 ### C++ language
 ###### Instructor: [Harry](https://youtu.be/yGB9jhsEsr8)
 OS: [Windows 10](https://www.microsoft.com/en-in/windows/get-windows-10) |
 Editor: [Gitpod](https://gitpod.io/) |
 Compiler: [G++](https://gcc.gnu.org/)
- Still learning this language.
+* Still learning this language.
 
 ### Python language
 ###### Instructor: [Ziyad Yehia](https://www.udemy.com/course/the-python-bible/)
 OS: [Linux Mint](https://linuxmint.com/)
 Editor: [Spyder](https://www.spyder-ide.org/)
- Still learning this language.
+* Still learning this language.
 
