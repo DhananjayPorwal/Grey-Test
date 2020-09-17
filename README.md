@@ -30,7 +30,7 @@ Compiler: [G++](https://gcc.gnu.org/)
 
 ### Python language
 ###### Instructor: [Ziyad Yehia](https://www.udemy.com/course/the-python-bible/)
-OS: [Linux Mint](https://linuxmint.com/)
+OS: [Linux Mint](https://linuxmint.com/) |
 Editor: [Spyder](https://www.spyder-ide.org/)
 * Still learning this language.
 
