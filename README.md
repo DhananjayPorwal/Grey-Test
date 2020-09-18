@@ -33,4 +33,3 @@ Compiler: [G++](https://gcc.gnu.org/)
 OS: [Linux Mint](https://linuxmint.com/) |
 Editor: [Spyder](https://www.spyder-ide.org/)
 * Still learning this language.
-
