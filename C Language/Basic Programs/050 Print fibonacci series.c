@@ -4,7 +4,7 @@ int main()
     int pre = 1, cur = 1, temp, i, n;
     printf("Enter a number");
     scanf("%d", &n);
-    printf("%d\t%d", pre, cur);
+    printf("0\t%d\t%d", pre, cur);
     for (i = 3; i <= n; i++)
     {
         temp = cur;
