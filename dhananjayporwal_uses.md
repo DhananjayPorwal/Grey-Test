@@ -1,7 +1,7 @@
 # Uses
 Last Update: 5-Oct-2020
 
-## Machines
+## Machine
 +  Mac Book Air 2020
 + Desktop
   + Pentium 2010
@@ -14,11 +14,11 @@ Last Update: 5-Oct-2020
 + Windows 10
 + Kali Linux
 
-## Editors
+## Editor
 + VIM
 + Visual Studio
 
-## Other Softwares
+## Other Software
 + Metasploit Framework
 + Nmap
 + OpenSSH
