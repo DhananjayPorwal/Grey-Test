@@ -1,3 +1,4 @@
+# List and list function
 myCart = ["phone", "shoes", "sleepers", "trimmer", "tshirt", "shirt", "lower", "pant", 214, 56.77]
 print(myCart)
 print(myCart[5])
@@ -52,3 +53,9 @@ numberList.pop()
 print(numberList)
 
 # Tuple
+# Mutable means can change (Lists are mutable)
+# Immutable means can't change (Tuple are immutable)
+tupleTry = (2, 4, 6, 3)
+tupleForSingleElement = (1,) # Always we have to add extra comma in tuple having single element
+print(tupleTry)
+print(tupleForSingleElement)
