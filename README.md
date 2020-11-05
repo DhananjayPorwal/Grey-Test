@@ -15,7 +15,7 @@
 
 ### C language
 It took 4 months to learn C language form beginner to advance.
-###### Instructor: [Prashant Chaudhari](https://youtu.be/vl794HKeXug) | [Code With Harry](https://www.youtube.com/watch?v=ZSPZob_1TOk&t=22189s)
+###### Instructor: [Prashant Chaudhari](https://youtu.be/vl794HKeXug) && [Code With Harry](https://www.youtube.com/watch?v=ZSPZob_1TOk&t=22189s)
 OS: [Windows 10](https://www.microsoft.com/en-in/windows/get-windows-10) |
 Editor: [CODE::BLOCKS](http://www.codeblocks.org/) && [VS Code](https://code.visualstudio.com/) |
 Compiler: [GCC](https://gcc.gnu.org/)
@@ -29,7 +29,7 @@ Compiler: [GCC](https://gcc.gnu.org/)
 * Still learning this language.
 
 ### Python language
-###### Instructor: [Ziyad Yehia](https://www.udemy.com/course/the-python-bible/)
-OS: [Linux Mint](https://linuxmint.com/) |
-Editor: [Spyder](https://www.spyder-ide.org/)
+###### Instructor: [Ziyad Yehia](https://www.udemy.com/course/the-python-bible/) && [Code With Harry](https://www.codewithharry.com/videos/python-tutorials-for-absolute-beginners-9)
+OS: [Linux Mint](https://linuxmint.com/) && [Windows 10](https://www.microsoft.com/en-in/windows/get-windows-10) |
+Editor: [Spyder](https://www.spyder-ide.org/) && [PyCharm](https://www.jetbrains.com/pycharm/) && [VS Code](https://code.visualstudio.com/) |
 * Still learning this language.
