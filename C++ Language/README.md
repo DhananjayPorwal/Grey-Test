@@ -62,3 +62,55 @@ int a = 6;
 |char|union|pointer|
 |double|||
 |bool|||
+
+## Basics of Input/Output
+
+iostream: Input Output STREAM
+
++ Stream: Sequence of bytes corresponding to input and output.
++ Input stream: Direction of flow of bytes takes place form input device (like keyboard) to the main memory.
++ Output stream: Direction of flow of bytes takes place form main memory to output device (like Monitor).
+
+> "<<" is Insertion Operator<br>
+> ">>" is Extraction Operator
+
+## Header Files
+
++ System-Define: Comes with compiler (like iostream).
++ User-Define: Writtem by programmer (like "xyz.h").
+
+## Operator
+
+### Arithmetic Operators
+
+|Name  |Symbol|
+|------|------|
+|Addition|   +|
+|Subtraction|   -|
+|Multiplication|   *|
+|Division|   /|
+|Modulus|   %|
+|Pre-Increment|   ++a|
+|Post-Increment|   a++| 
+|Pre-Decrement|   --a|
+|Post-Decrement|   a--| <br>
+<br>
+
+### Assignment Operators
+
+|Name  |Symbol|
+|------|------|
+|Simple Assign|     =|
+|Add and Assign|     +=|
+|Sub and Assign|     -=|
+|Multi and Assign|     *=|
+|Div and Assign|     /=|
+|Mod and Assign|     %=|
+
+### Logical Operators
+
+|Name  |Symbol|
+|------|------|
+|AND| &&|
+|OR| II|
+|NOT| !|
