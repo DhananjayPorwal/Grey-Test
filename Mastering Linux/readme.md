@@ -1,4 +1,4 @@
-# Linux Mastery Master Command
+# Mastering Linux
 
 ## Some Basic Commands
 |Command| Output|Shortcut|
