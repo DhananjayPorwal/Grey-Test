@@ -32,3 +32,26 @@ Smoking&#8594;French&#8594;<img src="https://5.imimg.com/data5/WD/PM/MY-1902309/
 🌟 A terminal is a window into shell
 
 > Bash is most common shell
+
+## Command and Structure
+
+commandName options inputs<br>
+like:
+<b>cal -A 1 12 2021</b> 
+
+> Q. How to find shell's **search path** of commands?<br>
+A. commandName $PATH
+
+> Q. How to find loaction of command?<br>
+A. which commandName
+
+```bash
+💫 commandName -option1option2option3
+ls -abc
+(OR)
+ls --all --escape -c
+```
+
+
+🌗 ***Terminal is case sensitive tool.***
+
