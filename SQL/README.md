@@ -38,4 +38,4 @@ For SQL:
 |Q|Query|
 |L|Language|
 
-> Non-English countries preferred SQL. SEQUEL is a trademark of Aeroplane Company so developers of SQL used SQL instead of SEQUEL.
+> Non-English countries preferred SQL as a name. SEQUEL is a trademark of Aeroplane Company so developers of SQL used to call it as SQL instead of SEQUEL.
