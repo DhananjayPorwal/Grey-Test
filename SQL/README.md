@@ -5,7 +5,7 @@
 What is Database?
 A database is a collection of data stored in a format that can easily be accessed.
 
-#### Types of Databases
+### Types of Databases
 
 + Relational Databases
 + NoSQL Databases
