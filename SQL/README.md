@@ -101,3 +101,146 @@ Here,<br>
 
 > Every statement is close by **;** 
 
+```SQL
+-- Comments are written like this
+```
+
+### The **SELECT** clause
+
+```SQL
+SELECT 
+    first_name,
+    last_name,
+    points,
+    points + 10 AS 'new points'
+FROM customers;
+```
+
+Here,<br>
+**AS** clause is used for proposing name for new or modify entity.
+
+```SQL
+SELECT DISTINCT state
+FROM customers;
+```
+
+Here,<br>
+**DISTINCT** clause is used for removing duplicate entries.
+
+*****
+🤔 Quiz
+
+```SQL
+-- Return all the products
+--     name
+--     unit_price
+--     new_price (unit_price * 1.1)
+```
+
+😉 Solution
+
+```SQL
+SELECT 
+    name,
+    unit_price,
+    unit_price * 1.1 as 'new price'
+FROM products;
+```
+*****
+
+### The **WHERE** clause
+
+```SQL
+SELECT *
+FROM customers
+WHERE points > 3000;
+```
+
+```SQL
+SELECT *
+FROM customers
+where birth_day >= '1990-01-01';
+```
+
+**WHERE** clause is used for filtering result.
+
+|Name|Operator Symbol|
+|-|-|
+|Equal|=|
+|Not Equal|!= or <>|
+|Greater than|>|
+|Less than|<|
+|Greater than or equals to|>=|
+|Less than or equals to|<=|
+
+
+*****
+🤔 Quiz
+
+```SQL
+-- Return all the payments done in year 2019
+```
+
+😉 Solution
+
+```SQL
+SELECT *
+FROM payments
+WHERE date >= '2019-01-01';
+```
+
+*****
+
+### The **AND**, **OR** and **NOT** Operators
+
+```SQL
+SELECT *
+FROM customers
+WHERE birth_date >= '1999-01-01' AND points >= 2000
+
+```
+
+```SQL
+SELECT *
+FROM customers
+WHERE birth_date >= '1999-01-01' OR points >= 2000
+```
+
+```SQL
+SELECT *
+FROM customers
+WHERE NOT (birth_date >= '1999-01-01' AND points >= 2000)
+```
+
+Here,<br>
+**AND**, **OR**, **NOT** represents logical operators.
+
+*****
+🤔 Quiz
+
+```SQL
+-- From the order_items table get the items for order #6
+-- where the total price is greater than 30
+```
+
+😉 Solution
+
+```SQL
+SELECT *
+FROM order_items
+WHERE order_id = 6 AND ((unit_price * quantity)>30)
+```
+
+*****
+
+
+
+
+
+
+
+
+
+```SQL
+
+```
