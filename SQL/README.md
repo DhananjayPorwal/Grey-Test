@@ -1,5 +1,32 @@
 # SQL
 
+## Installation
+
+### For Ubuntu
+
+To make sure that your system is up to date
+> sudo apt update
+
+List the packages it wants to install
+> sudo apt upgrade
+
+To install MySQL-server
+> sudo apt install mysql-server
+
+For fresh installations of MySQL, you’ll want to run the DBMS’s included security script. This script changes some of the less secure default options for things like remote root logins and sample users.
+> sudo mysql_secure_installation
+
+Run MySQL
+> sudo mysql -u root -p
+& provide password
+
+![MySQL](https://i.ibb.co/51tBwQf/mysql.png)
+
+To install MySQL Workbench
+> sudo apt install mysql-workbench-community
+
+![MySQL-Workbench](https://dev.mysql.com/doc/workbench/en/images/wb-home-screen-new.png)
+
 ## Getting Started
 
 What is Database?
