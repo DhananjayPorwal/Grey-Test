@@ -39,3 +39,18 @@ For SQL:
 |L|Language|
 
 > Non-English countries preferred SQL as a name. SEQUEL is a trademark of Aeroplane Company so developers of SQL used to call it as SQL instead of SEQUEL.
+
+### MySQL Workbench
+
+![MySQL](https://www.mysql.com/common/images/products/MySQL_Workbench_Editor_General_Mac.png)
+
+We are using MySQL workbench in this course/tutorial. In staring it looks too complicated but it is not. There are three panels i.e. Left, Right, and Bottom.
+Left panel has two tabs named as **Administration** and **Schemas**. Administration is used for IMPORTING/EXPORTING data, server management etc... where as Schemas is used for navigating databases which are stored in our machine.
+Right panel also has two tabs named as **Context help** and **Snippets**.
+Bottom panel shows Action Ouptut and result when we execute any query.
+
+> We can execute single query form a database by selecting that query and executing it using ⚡ button.
+
+## Retrieving data from a single table
+
+### The **SELECT** statement
