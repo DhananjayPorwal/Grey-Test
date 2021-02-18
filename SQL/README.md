@@ -54,3 +54,23 @@ Bottom panel shows Action Ouptut and result when we execute any query.
 ## Retrieving data from a single table
 
 ### The **SELECT** statement
+
+```SQL
+USE databasename;
+SELECT *
+FROM tablename
+WHERE columnname_id = 1
+ORDER BY columnname_name ;
+```
+
+Here,<br>
+**USE** clause is used for selecting or using database.
+**SELECT** clause is used for showing tables.
+>     * is used for showing all columns.
+
+**FROM** clause is used showing particular table.
+**WHERE** clause is used for filtering result.
+**ORDER BY** clause is used for ordering result.
+
+> Every statement is close by **;** 
+
