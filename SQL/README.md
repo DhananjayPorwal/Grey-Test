@@ -291,25 +291,39 @@ WHERE birth_date BETWEEN '1990-01-01' AND '2000-01-01';
 *****
 
 
-### TEMPLATE
-
+### The **LIKE** Operator
 
 ```SQL
-
+SELECT *
+FROM customers
+WHERE last_name LIKE 'b%';
 ```
 Here,<br>
+**LIKE** operator is used for filtering strings.
+
+> '_b' used for single character before b.
+
+> '%b' used for any number character before b.
+
+> '%b%' used for checking b at all the position whether it is on first place or last place.
 
 *****
 🤔 Quiz
 
 ```SQL
-
+-- Get the customers whose
+--  addresses contain TRAIL or AVENUE
+--  phone number end with 9
 ```
 
 😉 Solution
 
 ```SQL
-
+SELECT *
+FROM customers
+WHERE address LIKE '%trail%' OR
+	  address LIKE '%avenue%' OR
+      phone LIKE '%9';
 ```
 
 *****
