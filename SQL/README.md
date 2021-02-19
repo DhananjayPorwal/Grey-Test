@@ -161,7 +161,7 @@ SELECT *
 FROM customers
 where birth_day >= '1990-01-01';
 ```
-
+Here,<br>
 **WHERE** clause is used for filtering result.
 
 |Name|Operator Symbol|
@@ -233,14 +233,198 @@ WHERE order_id = 6 AND ((unit_price * quantity)>30)
 
 *****
 
+### The **IN** Operator
 
 
+```SQL
+SELECT * 
+FROM customers
+WHERE state IN ('VA','CO','FL');
+```
+Here,<br>
+**IN** operator is used for applying multiple condition at a time.
+
+*****
+🤔 Quiz
+
+```SQL
+-- Return products with
+-- 	quantity in stock equal to 49, 38, 72
+```
+
+😉 Solution
+
+```SQL
+SELECT *
+FROM products
+WHERE quantity_in_stock IN (49, 38, 72);
+```
+
+*****
+
+### The **BETWEEN** Operator
+
+```SQL
+SELECT *
+FROM customers
+WHERE points BETWEEN 1000 AND 3000;
+```
+Here,<br>
+**BETWEEN** operator is used for defining range.
+
+*****
+🤔 Quiz
+
+```SQL
+-- Return customers born
+-- 	between 01/01/1990 and 01/01/2000
+```
+
+😉 Solution
+
+```SQL
+SELECT *
+FROM customers
+WHERE birth_date BETWEEN '1990-01-01' AND '2000-01-01';
+```
+
+*****
 
 
-
-
+### TEMPLATE
 
 
 ```SQL
 
 ```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
