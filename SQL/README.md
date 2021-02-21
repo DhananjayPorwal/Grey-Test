@@ -406,6 +406,145 @@ WHERE shipped_date IS NULL
 
 *****
 
+### The **ORDER BY** Clause
+
+
+```SQL
+SELECT *
+FROM customers
+ORDER BY state DESC, first_name;
+```
+Here,<br>
+**ORDER BY** clause is used to arrange the table with respect to attribute in ascending order.
+**DESC** is used to arrange table with respect to attribute in descending order.
+
+*****
+
+🌟 The benifit of using MySQL over other DBMS is ORDER BY clause is independent of SELECT clause where other gives error several times. 
+```SQL
+SELECT first_name, last_name
+FROM customers
+ORDER BY state;
+```
+*****
+
+```SQL
+SELECT first_name, last_name
+FROM customers
+ORDER BY 1 , 2;
+```
+Here,<br>
+1, 2 represents first_name, last_name respectively.
+
+> Using 1, 2,..... is not a good pratice because if we add new column name to it order distorted and give unexpected results.
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
 ### TEMPLATE
 
 
