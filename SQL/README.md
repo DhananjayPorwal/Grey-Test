@@ -328,48 +328,80 @@ WHERE address LIKE '%trail%' OR
 
 *****
 
-### TEMPLATE
+### The **REGEXP** Operator
 
 
 ```SQL
+SELECT *
+FROM customers
+-- WHERE last_name REGEXP '^field'
+-- WHERE last_name REGEXP 'field$'
+-- WHERE last_name REGEXP 'field|mac'
+-- WHERE last_name REGEXP '[gim]e'
+-- WHERE last_name REGEXP '[a-h]e'
 
 ```
 Here,<br>
+**REGEXP** is used for searching stings.
+
+**^** is used for searching in the starting.
+
+**$** is used for searching in the ending.
+
+**|** is used for Logical OR.
+
+**[]** is used for searching in combinations, like '[gr]e is equivalent to 'ge|re'.
+
+**[x-y]** is used for searching in range, like [a-d]e is equivalent to 'ae|be|ce|de'.
 
 *****
 🤔 Quiz
 
 ```SQL
-
+-- Get the customers whose
+    -- first name are ELKA or AMBUR
+	-- last name end with EY or ON
+	-- last name start with MY or contain SE
+	-- last name contain B followed by R or U
 ```
 
 😉 Solution
 
 ```SQL
-
+select * 
+from customers
+-- where first_name regexp 'elka|ambur'
+-- where last_name regexp 'ey$|on$'
+-- where last_name regexp '^my|se'
+-- where last_name regexp 'b[ru]'
 ```
 
 *****
 
-### TEMPLATE
+### The IS NULL Operator
 
 
 ```SQL
-
+SELECT *
+FROM customers
+WHERE phone IS NULL
 ```
 Here,<br>
+**IS NULL** is used for finding null values in any particular column.
 
 *****
 🤔 Quiz
 
 ```SQL
-
+-- Get the orders that are not shipped
 ```
 
 😉 Solution
 
 ```SQL
-
+SELECT *
+FROM orders
+WHERE shipped_date IS NULL
 ```
 
 *****
