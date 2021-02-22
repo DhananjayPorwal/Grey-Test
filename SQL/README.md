@@ -27,6 +27,10 @@ To install MySQL Workbench
 
 ![MySQL-Workbench](https://dev.mysql.com/doc/workbench/en/images/wb-home-screen-new.png)
 
+## Learning Path
+
+[Complete SQL Mastery](https://codewithmosh.com/p/complete-sql-mastery)
+
 ## Getting Started
 
 What is Database?
@@ -494,6 +498,8 @@ LIMIT 3
 ```
 
 *****
+
+## Retrieving Data From Multiple Tables
 
 ### TEMPLATE
 
