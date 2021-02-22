@@ -378,7 +378,7 @@ from customers
 
 *****
 
-### The IS NULL Operator
+### The **IS NULL** Operator
 
 
 ```SQL
@@ -420,7 +420,7 @@ Here,<br>
 
 *****
 
-🌟 The benifit of using MySQL over other DBMS is ORDER BY clause is independent of SELECT clause where other gives error several times. 
+🌟 The benefit of using MySQL over other DBMS is ORDER BY clause is independent of SELECT clause where other gives error several times. 
 ```SQL
 SELECT first_name, last_name
 FROM customers
@@ -438,40 +438,59 @@ Here,<br>
 
 > Using 1, 2,..... is not a good pratice because if we add new column name to it order distorted and give unexpected results.
 
+> **Primary Key** : In Relational Databases, primary key uniquely identifies each record in the table.
+
 *****
 🤔 Quiz
 
 ```SQL
-
+-- Get the total price of order_id = 2
+--   arrange them in decending order
 ```
 
 😉 Solution
 
 ```SQL
-
+SELECT *, quantity * unit_price AS total_price
+FROM order_items
+WHERE order_id = 2
+ORDER BY total_price DESC;
 ```
 
 *****
 
-### TEMPLATE
+### The **LIMIT** Clause
 
 
 ```SQL
-
+SELECT *
+FROM customers
+LIMIT 3;
 ```
 Here,<br>
-
+**LIMIT** clause is used to execute top 3 entries.
 *****
+
+```SQL
+SELECT *
+FROM customers
+LIMIT 6, 3;
+```
+> **6** is used to skip first 6 entries and **3** is used to print next 3 entries
+
 🤔 Quiz
 
 ```SQL
-
+-- Get top three loyal customers
 ```
 
 😉 Solution
 
 ```SQL
-
+SELECT *
+FROM customers
+ORDER BY points DESC
+LIMIT 3
 ```
 
 *****
