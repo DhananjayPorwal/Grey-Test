@@ -33,7 +33,7 @@ To install MySQL Workbench
 
 ## Getting Started
 
-What is Database?
+What is Database?<br>
 A database is a collection of data stored in a format that can easily be accessed.
 
 ### Types of Databases
