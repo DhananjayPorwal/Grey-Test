@@ -12,7 +12,7 @@ Last Update: 5-Oct-2020
   
 ## OS
 + Windows 10
-+ MacOS Mojave
++ MacOS BigSur
 + Kali Linux
 
 ## Editor
