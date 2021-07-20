@@ -1,23 +1,24 @@
 # Uses
-Last Update: 5-Oct-2020
+Last Update: 20-Jul-2021
 
 ## Machine
 +  Mac Book Air 2020
 + Desktop
   + Pentium 2010
   + 8 GB RAM
-  + 500 GB HDD
+  + 240 GB SSD
   + Logitech Mouse
   + Dell Keyboard
+  + Boat Rockerz 510
   
 ## OS
++ Ubuntu
 + Windows 10
 + MacOS BigSur
-+ Kali Linux
 
 ## Editor
-+ VIM
 + Visual Studio
++ VIM
 
 ## Other Software
 + Metasploit Framework
