@@ -163,7 +163,7 @@ WHERE points > 3000;
 ```SQL
 SELECT *
 FROM customers
-where birth_day >= '1990-01-01';
+where birth_date >= '1990-01-01';
 ```
 Here,<br>
 **WHERE** clause is used for filtering result.
@@ -501,6 +501,116 @@ LIMIT 3
 
 ## Retrieving Data From Multiple Tables
 
+### Inner Joins
+
+
+```SQL
+SELECT 
+    order_id, o.customer_id, first_name, last_name
+FROM
+    orders o
+        JOIN
+    customers c ON o.customer_id = c.customer_id
+```
+Here,<br>
+**o** is the alias of order table, Similarly **c** is for customer table.
+
+> Once we define an alias, we have to use it everywhere.
+
+> We can write **INNER JOIN** in the place of **JOIN**, both are same.
+
+*****
+🤔 Quiz
+
+```SQL
+-- Join order table and product table
+--      Print order_id, product_id, quantity, unit_price
+```
+
+😉 Solution
+
+```SQL
+SELECT 
+    order_id, ot.product_id, quantity, ot.unit_price
+FROM
+    order_items ot
+        JOIN
+    products pr ON ot.product_id = pr.product_id
+
+```
+
+*****
+
+### Joining Across Databases
+
+
+```SQL
+SELECT * FROM order_items io
+JOIN sql_inventory.products p
+	ON io.product_id = p.product_id
+```
+
+*****
+
+
+### Self Joins
+
+
+```SQL
+SELECT e.employee_id, e.first_name,
+m.first_name AS manager FROM employees e
+JOIN employees m
+	ON e.reports_to = m.employee_id
+```
+Here,<br>
+Same as Inner Join but, In this case we use same table twice. Hence we may got same column twice if we use * (Asterisk).
+
+> While using same table twice, we have to provide different alias.
+*****
+
+### Joining Multiple Tables
+
+
+```SQL
+SELECT 
+    o.order_id,
+    o.order_date,
+    c.first_name,
+    c.last_name,
+    os.name AS status
+FROM
+    orders o
+        JOIN
+    customers c ON o.customer_id = c.customer_id
+        JOIN
+    order_statuses os ON o.status = os.order_status_id
+```
+Here,<br>
+We have to apply **JOIN** operation (n-1) times where n = number of tables to join
+
+*****
+🤔 Quiz
+
+```SQL
+-- Join multiple tables 
+    -- Print client_name, order_date, payment_amount, payment_method
+```
+
+😉 Solution
+
+```SQL
+SELECT 
+    c.name, py.date, py.invoice_id, py.amount, pym.name
+FROM
+    clients c
+        JOIN
+    payments py ON c.client_id = py.client_id
+        JOIN
+    payment_methods pym ON py.payment_method = pym.payment_method_id
+```
+
+*****
+
 ### TEMPLATE
 
 
@@ -638,3 +748,832 @@ Here,<br>
 ```
 
 *****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
+### TEMPLATE
+
+
+```SQL
+
+```
+Here,<br>
+
+*****
+🤔 Quiz
+
+```SQL
+
+```
+
+😉 Solution
+
+```SQL
+
+```
+
+*****
+
